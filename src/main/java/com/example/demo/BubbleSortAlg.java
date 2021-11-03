@@ -1,6 +1,6 @@
 package com.example.demo;
 
-public class BubbleSortAlg {
+public class BubbleSortAlg implements SortAlg{
     public int[] sort(int[] numbers){
         return numbers;
     }

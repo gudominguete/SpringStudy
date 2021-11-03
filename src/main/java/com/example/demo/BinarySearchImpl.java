@@ -2,13 +2,18 @@ package com.example.demo;
 
 public class BinarySearchImpl {
 
+    private SortAlg sortAlg;
+
+    public BinarySearchImpl(SortAlg sortAlg){
+        super();
+        this.sortAlg = sortAlg;
+    }
+
     public int binarySearch(int[] numbers, int numberToSearchFor){
 
-        BubbleSortAlg bubbleSortAlg = new BubbleSortAlg();
-        int[] sortedNumbers = bubbleSortAlg.sort(numbers);
-        //Implementing Sorting an array
+        int[] sortedNumbers = sortAlg.sort(numbers);
+        System.out.println(sortAlg);
         //Search the array
-        //Return the result
         return 1;
     }
 

@@ -8,7 +8,7 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 
-		BinarySearchImpl binarySearch = new BinarySearchImpl();
+		BinarySearchImpl binarySearch = new BinarySearchImpl(new QuickSortAlg());
 		int result = binarySearch.binarySearch(new int[]{1,2,3,4},3);
 
 		System.out.println(result);
