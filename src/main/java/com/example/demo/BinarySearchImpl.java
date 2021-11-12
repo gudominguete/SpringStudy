@@ -1,7 +1,12 @@
 package com.example.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class BinarySearchImpl {
 
+    @Autowired
     private SortAlg sortAlg;
 
     public BinarySearchImpl(SortAlg sortAlg){
