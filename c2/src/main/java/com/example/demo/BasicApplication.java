@@ -1,11 +1,12 @@
 package com.example.demo;
 
+import com.example.demo.basic.BinarySearchImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class DemoApplication {
+public class BasicApplication {
 
 	public static void main(String[] args) {
 
@@ -14,7 +15,7 @@ public class DemoApplication {
 
 //		System.out.println(result);
 
-		ApplicationContext ac = SpringApplication.run(DemoApplication.class, args);
+		ApplicationContext ac = SpringApplication.run(BasicApplication.class, args);
 
 		BinarySearchImpl binarySearch1 =  ac.getBean(BinarySearchImpl.class);
 		int result1 = binarySearch1.binarySearch(new int[]{1,2,3,4},3);
