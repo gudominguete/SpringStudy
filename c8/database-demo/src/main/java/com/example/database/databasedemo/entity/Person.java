@@ -8,6 +8,19 @@ public class Person {
     private String date;
     private Date birthDate;
 
+    public Person() {
+    }
+
+    @Override
+    public String toString() {
+        return "\nPerson{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", date='" + date + '\'' +
+                ", birthDate=" + birthDate +
+                '}';
+    }
+
     public Person(int id, String name, String date, Date birthDate) {
         this.id = id;
         this.name = name;
