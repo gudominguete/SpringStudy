@@ -5,7 +5,9 @@ import java.util.Date;
 public class Person {
     private int id;
     private String name;
-    private String date;
+    private String location;
+
+
     private Date birthDate;
 
     public Person() {
@@ -16,15 +18,15 @@ public class Person {
         return "\nPerson{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", date='" + date + '\'' +
+                ", location='" + location + '\'' +
                 ", birthDate=" + birthDate +
                 '}';
     }
 
-    public Person(int id, String name, String date, Date birthDate) {
+    public Person(int id, String name, String location, Date birthDate) {
         this.id = id;
         this.name = name;
-        this.date = date;
+        this.location = location;
         this.birthDate = birthDate;
     }
 
@@ -44,13 +46,6 @@ public class Person {
         this.name = name;
     }
 
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
 
     public Date getBirthDate() {
         return birthDate;
@@ -58,5 +53,13 @@ public class Person {
 
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 }
